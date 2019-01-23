@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "InstaLikes",
+  "version": "0.1",
+  "description": "Automatically like Instagram posts at a humanish rate",
+
+  "icons": {
+    "48": "icons/logo-48.png",
+    "96": "icons/logo-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.instagram.com/*"],
+      "js": ["autolike.js"]
+    }
+  ]
+}
