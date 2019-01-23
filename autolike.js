@@ -21,7 +21,7 @@ function clickLike(target = 0) {
 
 // Get appropriate timeout value in ms
 function getTimeoutValue(likesPerHour = 90) {
-  randomDiff = Math.random() * 100 * 1000 - 50000;
+  randomDiff = Math.random() * 5000 - 2500;
   baseLine = 1 / likesPerHour * 60 * 60 * 1000;
   return baseLine + randomDiff;
 }
